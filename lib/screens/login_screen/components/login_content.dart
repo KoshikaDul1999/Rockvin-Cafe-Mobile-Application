@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:login_screen/utils/helper_functions.dart';
+import 'package:RockVin/utils/helper_functions.dart';
 
 import '../../../utils/constants.dart';
 import '../animations/change_screen_animation.dart';
