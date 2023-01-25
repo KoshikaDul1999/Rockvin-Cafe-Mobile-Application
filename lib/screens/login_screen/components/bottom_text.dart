@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/screens/login_screen/animations/change_screen_animation.dart';
-import 'package:login_screen/utils/helper_functions.dart';
+import 'package:RockVin/screens/login_screen/animations/change_screen_animation.dart';
+import 'package:RockVin/utils/helper_functions.dart';
 
 import '../../../utils/constants.dart';
 import 'login_content.dart';
