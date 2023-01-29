@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'screens/login_screen/login_screen.dart';
 import 'utils/constants.dart';
-
+import 'screens/login_screen/login_screen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -26,3 +24,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
