@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1062676055284",
+    "project_id": "rockvin-33f7e",
+    "storage_bucket": "rockvin-33f7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062676055284:android:d7a4e0b83eff4523624aa1",
+        "android_client_info": {
+          "package_name": "com.example.RockVin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062676055284-54ba1hf3lfq7rhd7gdmjj97uc2jpan85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxfVXhYjZ08rfU9LKor0n9_BEFABdDD8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062676055284-54ba1hf3lfq7rhd7gdmjj97uc2jpan85.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1062676055284-8jhmvmngkuhdslld1hvp90555ni6d37l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.loginScreen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
