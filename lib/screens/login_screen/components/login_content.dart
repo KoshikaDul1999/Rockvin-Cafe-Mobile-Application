@@ -21,8 +21,8 @@ class LoginContent extends StatefulWidget {
 
 class _LoginContentState extends State<LoginContent>
     with TickerProviderStateMixin {
+  late final List<Widget> loginContent ;
   late final List<Widget> createAccountContent;
-  late final List<Widget> loginContent;
 
   Widget inputField(String hint, IconData iconData) {
     return Padding(
@@ -140,42 +140,39 @@ class _LoginContentState extends State<LoginContent>
 
   @override
   void initState() {
-    createAccountContent = [
-      inputField('Name', Ionicons.person_outline),
-      inputField('Email', Ionicons.mail_outline),
-      inputField('Password', Ionicons.lock_closed_outline),
-      loginButton('Sign Up'),
-      orDivider(),
-      logos(),
-    ];
-
     loginContent = [
       inputField('Email', Ionicons.mail_outline),
       inputField('Password', Ionicons.lock_closed_outline),
       loginButton('Log In'),
       forgotPassword(),
     ];
+    createAccountContent = [
+      inputField('Name', Ionicons.person_outline),
+      inputField('Email', Ionicons.mail_outline),
+      inputField('Password', Ionicons.lock_closed_outline),
+      loginButton('Sign Up'),
+      orDivider(),//
+      logos(),
+    ];
 
     ChangeScreenAnimation.initialize(
       vsync: this,
-      createAccountItems: createAccountContent.length,
       loginItems: loginContent.length,
+      createAccountItems: createAccountContent.length,
+
     );
-
-    for (var i = 0; i < createAccountContent.length; i++) {
-      createAccountContent[i] = HelperFunctions.wrapWithAnimatedBuilder(
-        animation: ChangeScreenAnimation.createAccountAnimations[i],
-        child: createAccountContent[i],
-      );
-    }
-
     for (var i = 0; i < loginContent.length; i++) {
       loginContent[i] = HelperFunctions.wrapWithAnimatedBuilder(
         animation: ChangeScreenAnimation.loginAnimations[i],
         child: loginContent[i],
       );
     }
-
+    for (var i = 0; i < createAccountContent.length; i++) {
+      createAccountContent[i] = HelperFunctions.wrapWithAnimatedBuilder(
+        animation: ChangeScreenAnimation.createAccountAnimations[i],
+        child: createAccountContent[i],
+      );
+    }
     super.initState();
   }
 
@@ -202,12 +199,12 @@ class _LoginContentState extends State<LoginContent>
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: createAccountContent,
+                children:loginContent ,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: loginContent,
+                children: createAccountContent ,
               ),
             ],
           ),
