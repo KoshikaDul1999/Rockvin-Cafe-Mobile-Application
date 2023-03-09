@@ -53,7 +53,7 @@ class _BottomTextState extends State<BottomText> {
                   text: ChangeScreenAnimation.currentScreen ==
                           Screens.createAccount
                       ? 'Already have an account? '
-                      : 'Don\'t have an account? ',
+                      : 'Don\'t have an account ? ',
                   style: const TextStyle(
                     color: kPrimaryColor,
                     fontWeight: FontWeight.w600,
@@ -62,7 +62,7 @@ class _BottomTextState extends State<BottomText> {
                 TextSpan(
                   text: ChangeScreenAnimation.currentScreen ==
                           Screens.createAccount
-                      ? 'Log In'
+                      ? 'Sign In'
                       : 'Sign Up',
                   style: const TextStyle(
                     color: kSecondaryColor,
