@@ -143,7 +143,7 @@ class _LoginContentState extends State<LoginContent>
     loginContent = [
       inputField('Email', Ionicons.mail_outline),
       inputField('Password', Ionicons.lock_closed_outline),
-      loginButton('Sign In'),
+      loginButton('Log In'),
       forgotPassword(),
     ];
     createAccountContent = [
