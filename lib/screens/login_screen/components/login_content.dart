@@ -59,8 +59,8 @@ class _LoginContentState extends State<LoginContent>
         onPressed: () {},
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
-          backgroundColor: kSecondaryColor,
           shape: const StadiumBorder(),
+          backgroundColor: kSecondaryColor,
           elevation: 8,
           shadowColor: Colors.black87,
         ),
