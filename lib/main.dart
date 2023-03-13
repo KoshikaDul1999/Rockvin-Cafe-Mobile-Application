@@ -1,10 +1,8 @@
-import 'package:RockVin/firebase_options.dart';
+import 'package:rock_vin/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'utils/constants.dart';
 import 'screens/login_screen/login_screen.dart';
-
-
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,18 +16,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'RockV',
+      title: 'RockVin',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
         textTheme: Theme.of(context).textTheme.apply(
-          bodyColor: kPrimaryColor,
-          fontFamily: 'Montserrat',
-        ),
+              bodyColor: kPrimaryColor,
+              fontFamily: 'Montserrat',
+            ),
       ),
       home: const LoginScreen(),
     );
   }
 }
-
-

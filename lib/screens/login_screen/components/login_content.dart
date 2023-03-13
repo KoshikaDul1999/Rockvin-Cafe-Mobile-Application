@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:RockVin/utils/helper_functions.dart';
+import 'package:rock_vin/utils/helper_functions.dart';
 
 import '../../../utils/constants.dart';
 import '../animations/change_screen_animation.dart';
@@ -21,7 +21,7 @@ class LoginContent extends StatefulWidget {
 
 class _LoginContentState extends State<LoginContent>
     with TickerProviderStateMixin {
-  late final List<Widget> loginContent ;
+  late final List<Widget> loginContent;
   late final List<Widget> createAccountContent;
 
   Widget inputField(String hint, IconData iconData) {
@@ -59,8 +59,8 @@ class _LoginContentState extends State<LoginContent>
         onPressed: () {},
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
+          backgroundColor: kSecondaryColor,
           shape: const StadiumBorder(),
-          primary: kSecondaryColor,
           elevation: 8,
           shadowColor: Colors.black87,
         ),
@@ -151,7 +151,7 @@ class _LoginContentState extends State<LoginContent>
       inputField('Email', Ionicons.mail_outline),
       inputField('Password', Ionicons.lock_closed_outline),
       loginButton('Sign Up'),
-      orDivider(),//
+      orDivider(), //
       logos(),
     ];
 
@@ -159,7 +159,6 @@ class _LoginContentState extends State<LoginContent>
       vsync: this,
       loginItems: loginContent.length,
       createAccountItems: createAccountContent.length,
-
     );
     for (var i = 0; i < loginContent.length; i++) {
       loginContent[i] = HelperFunctions.wrapWithAnimatedBuilder(
@@ -199,12 +198,12 @@ class _LoginContentState extends State<LoginContent>
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children:loginContent ,
+                children: loginContent,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: createAccountContent ,
+                children: createAccountContent,
               ),
             ],
           ),
